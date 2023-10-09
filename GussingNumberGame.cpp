@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-
+  
     char ch;
-
+    int i=1;
     do
     {
     int a=0,b=0,c=1,d=0;
@@ -12,9 +12,11 @@ int main()
     {
         cout<<"Input Number:";
         cin>>a;
+        srand(i);
         b=(rand()%100)+1;
         cout<<"Input Number:"<<a<<endl;
         cout<<"Generate Number:"<<b<<endl;
+        i=i+5;
         if(a==b)
         {
             d=1;
